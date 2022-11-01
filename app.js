@@ -12,14 +12,13 @@ let oneEuroIs={
     "GBP": 0.8,
 }
 
+
 let fromDollarToYen=(Dolar) =>{
-    return Dolar/oneEuroIs.JPY*oneEuroIs.USD
+    return Dolar*oneEuroIs.JPY/oneEuroIs.USD
 }
 
-
-
 let fromYenToPound=(Yen) =>{
-    return Yen/oneEuroIs.GBP*oneEuroIs.JPY
+    return Yen*oneEuroIs.GBP/oneEuroIs.JPY
 }
 
 console.log (fromDollarToYen(1,oneEuroIs.JPY))
